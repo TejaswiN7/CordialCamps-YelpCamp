@@ -17,10 +17,10 @@ var commentRoutes    = require("./routes/comments"),
     indexRoutes      = require("./routes/index")
     
 // mongoose.connect("mongodb://localhost/yelp_camp_v10");
-const databaseUri= mongoose.connect("mongodb:tejdwg:rr85230@ds151433.mlab.com:51433/yelpcampinitial");
-mongoose.connect(databaseUri)
-      .then(() => console.log("Database connected"))
-      .catch(err => console.log("Database connection error: ${err.message}"));
+ mongoose.connect("mongodb://tejdwg:rr85230@ds151433.mlab.com:51433/yelpcampinitial");
+// mongodb://<dbuser>:<dbpassword>@ds151433.mlab.com:51433/yelpcampinitial
+
+
       
 //mongodb: tejdwg:rr85230@ds151433.mlab.com:51433/yelpcampinitial
 app.use(bodyParser.urlencoded({extended: true}));
